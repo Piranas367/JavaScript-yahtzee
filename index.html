@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yachtzeeEindopdracht.css">
+    <link rel="shortcut icon" 
+    href="JavaScript/favicon-32x32.png" 
+    type="image/x-icon"
+    >
+
+    <title>Yahtzee The Game</title>
+  </head>
+
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="download.jpg" alt="logo" class="logo-img"
+        /></a>
+      </div>
+    </div>
+
+    <button class="button" onclick="rollDice()">Roll Dice</button>
+    <button class="button" onclick="resetDice()">Reset Dice</button>
+
+  </header>
+
+<body>
+  <div class="H1">
+  <h1 >Yahtzee The Game</h1>
+</div>
+<p id="dice-value"></p>
+  <table>
+    <tr>
+      <th>Player</th>
+      <th>Ones</th>
+      <th>Twos</th>
+      <th>Threes</th>
+      <th>Fours</th>
+      <th>Fives</th>
+      <th>Sixes</th>
+      <th>Three of a Kind</th>
+      <th>Four of a Kind</th>
+      <th>Full House</th>
+      <th>Small Straight</th>
+      <th>Large Straight</th>
+      <th>Yahtzee</th>
+      <th>Chance</th>
+      <th>Total Score</th>
+    </tr>
+
+    <tr>
+      <td>Player 1</td>
+      <td id="player1-ones"></td>
+      <td id="player1-twos"></td>
+      <td id="player1-threes"></td>
+      <td id="player1-fours"></td>
+      <td id="player1-fives"></td>
+      <td id="player1-sixes"></td>
+      <td id="player1-three-of-a-kind"></td>
+      <td id="player1-four-of-a-kind"></td>
+      <td id="player1-full-house"></td>
+      <td id="player1-small-straight"></td>
+      <td id="player1-large-straight"></td>
+      <td id="player1-yahtzee"></td>
+      <td id="player1-chance"></td>
+      <td id="player1-total"></td>
+    </tr>
+
+    <tr>
+      <td>Player 2</td>
+      <td id="player2-ones"></td>
+      <td id="player2-twos"></td>
+      <td id="player2-threes"></td>
+      <td id="player2-fours"></td>
+      <td id="player2-fives"></td>
+      <td id="player2-sixes"></td>
+      <td id="player2-three-of-a-kind"></td>
+      <td id="player2-four-of-a-kind"></td>
+      <td id="player2-full-house"></td>
+      <td id="player2-small-straight"></td>
+      <td id="player2-large-straight"></td>
+      <td id="player2-yahtzee"></td>
+      <td id="player2-chance"></td>
+      <td id="player2-total"></td>
+    </tr>
+    
+  </table>
+
+  <div class="dice-container">
+    <div class="dice" id="dice1">1</div>
+    <div class="dice" id="dice2">2</div>
+    <div class="dice" id="dice3">3</div>
+    <div class="dice" id="dice4">4</div>
+    <div class="dice" id="dice5">5</div>
+  </div>
+
+      <div id="scoresheet"></div>
+
+</body>
+
+  <script src="YahtzeeEindopdracht.js"></script>
+  </body>
+</html>
