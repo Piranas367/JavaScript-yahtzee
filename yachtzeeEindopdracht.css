@@ -20,13 +20,20 @@ body {
 table {
   border-collapse: collapse;
   margin: 20px auto;
+  border: 2px solid black;
+  width: 40%;
 }
 
 th,
 td {
   border: 1px solid black;
   padding: 10px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  text-align: center;
 }
+
 .dice-container {
   text-align: center;
   margin: 20px auto;
@@ -38,18 +45,56 @@ td {
   height: 50px;
   background-color: white;
   border: 1px solid black;
+  border-color: black;
   margin: 0 5px;
   text-align: center;
   line-height: 50px;
   font-weight: bold;
 }
 
+.volgendeRondeKnop {
+  display: flex;
+  height: 40px;
+  padding: 1rem;
+  display: flex;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+  justify-content: center;
+}
+
 .H1 {
   text-align: center;
 }
 
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
+.button {
+  height: 50px;
+  padding: 1rem;
+}
+
+.playerButton {
+  height: 40px;
+  padding: 1rem;
+  display: flex;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+}
+
+.green-button {
+  border-color: red;
+  border-color: black;
+}
+
+.player-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.roll-count-info{
+  display: flex;
+  justify-content: center
 }
